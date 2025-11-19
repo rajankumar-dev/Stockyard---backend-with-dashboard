@@ -5,7 +5,7 @@ const Funds = () => {
   return (
     <>
       <div className="funds">
-        <p>Instant, zero-cost fund transfers with UPI </p>
+        <p>Instant, zero-cost fund transfer with UPI </p>
         <Link className="btn btn-green">Add funds</Link>
         <Link className="btn btn-blue">Withdraw</Link>
       </div>
@@ -76,7 +76,7 @@ const Funds = () => {
 
         <div className="col">
           <div className="commodity">
-            <p>You don't have a commodity account</p>
+            <p>You don't have any commodity account</p>
             <Link className="btn btn-blue">Open Account</Link>
           </div>
         </div>

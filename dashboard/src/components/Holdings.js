@@ -60,13 +60,11 @@ const Holdings = () => {
             <th>Net chg.</th>
             <th>Day chg.</th>
           </tr>
-
           {allHoldings.map((stock, index) => {
             const curValue = stock.price * stock.qty;
             const isProfit = curValue - stock.avg * stock.qty >= 0.0;
             const profClass = isProfit ? "profit" : "loss";
             const dayClass = stock.isLoss ? "loss" : "profit";
-
             return (
               <tr key={index}>
                 <td>{stock.name}</td>
@@ -90,7 +88,7 @@ const Holdings = () => {
           <h5>
             29,875.<span>55</span>{" "}
           </h5>
-          <p>Total investment</p>
+          <p>Total investments</p>
         </div>
         <div className="col">
           <h5>
@@ -99,7 +97,7 @@ const Holdings = () => {
           <p>Current value</p>
         </div>
         <div className="col">
-          <h5>1,553.40 (+5.20%)</h5>
+          <h5>1,553.4 (+5.20%)</h5>
           <p>P&L</p>
         </div>
       </div>
